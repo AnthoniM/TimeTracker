@@ -1,0 +1,53 @@
+.card {
+  width: 18em;
+  height: 24em;
+  box-shadow: 2px 1px 8px 1px rgba(0,0,0,.3);
+  transition: .3s;
+  padding: 1.5em 1.25em 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  max-width: 100%;
+  place-content: stretch flex-start;
+  align-items: stretch;
+  border-radius: .25rem;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.columnDiv {
+   flex-direction: column;
+   box-sizing: border-box;
+   display: flex;
+   max-width: 100%;
+   place-content: center;
+   align-items: center;
+}
+
+.section {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  max-height: 100%;
+  place-content: stretch flex-start;
+  align-items: stretch;
+}
+
+.footer {
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  max-width: 100%;
+  place-content: center;
+  align-items: center;
+}
