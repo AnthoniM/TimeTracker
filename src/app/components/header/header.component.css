@@ -1,0 +1,21 @@
+a:active, a:hover, a:not([href]):not([tabindex]):hover {
+  color: #d3d3d3;
+}
+.app-name {
+  font-family: monospace;
+  font-style: oblique;
+  font-size: 17pt;
+}
+div {
+  color: #fff;
+}
+a {
+  color: #fff;
+  font-weight: 400;
+  padding: 0 .5em;
+  text-decoration: none;
+  background-color: transparent;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
