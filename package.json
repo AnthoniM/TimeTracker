@@ -26,6 +26,7 @@
     "core-js": "^2.5.4",
     "flex-layout": "^1.0.1",
     "jquery": "^3.4.0",
+    "moment": "^2.24.0",
     "ngx-bootstrap": "^4.0.1",
     "popper.js": "^1.15.0",
     "rxjs": "~6.3.3",
