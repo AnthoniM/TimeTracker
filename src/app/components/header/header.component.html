@@ -1,0 +1,25 @@
+<div class="headnav-container" color="primary" style="flex-direction: row; box-sizing: border-box; display: flex;">
+  <div fxflex="1 0 20%" style="flex: 1 0 20%; box-sizing: border-box;">
+    <div class="logo" fxhide.lt-md="" fxhide.xs="">
+      <img alt="Sprints Logo" src="assets/logo.png">
+    </div>
+  </div>
+  <div fxflex="1 1 60%" fxhide.lt-md="" fxlayout="" fxlayoutalign="center center" style="flex-direction: row; box-sizing: border-box; place-content: center; align-items: center; display: none; flex: 1 1 100%; max-width: 60%;">
+    <a class="app-name" routerlink="/" href="/">≡Sprint</a>
+  </div>
+  <div fxflex="8 8 70%" fxhide.gt-sm="" fxlayout="" fxlayoutalign="center center" style="flex-direction: row; box-sizing: border-box; place-content: center; align-items: center; display: flex; flex: 8 8 100%; max-width: 70%;">
+    <!-- <a class="app-name" style="cursor: default">≡Sprint</a> -->
+    <a class="app-name" routerLink="/">≡Sprint</a>
+  </div>
+  <div class="header-links" fxflex="1 0 20%" fxlayout="" fxlayoutalign="end center" style="flex-direction: row; box-sizing: border-box; display: flex; place-content: center flex-end; align-items: center; flex: 1 0 20%;">
+    <div fxlayout="" fxlayoutalign="end" style="flex-direction: row; box-sizing: border-box; display: flex; max-height: 100%; place-content: stretch flex-end; align-items: stretch;">
+
+      <a *ngIf="auth.isAuthenticated()" fxhide.lt-md="" routerlink="/sprint" style="cursor: pointer; display: block;" routerLink="sprint">Sprints</a>
+      <!---->
+      <a *ngIf="auth.isAuthenticated()" fxhide.lt-md="" style="cursor: pointer; display: block;" (click)="auth.logout()" routerlink="">Logout</a>
+
+      <a *ngIf="!auth.isAuthenticated()" fxhide.lt-md="" style="cursor: pointer; display: block;" (click)="auth.login()" routerLink="">Login</a>
+    </div>
+  </div>
+  <audio src="./assets/notification.wav"></audio>
+</div>
